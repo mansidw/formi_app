@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const User = mongoose.model(
   "User",
   new mongoose.Schema({
+    name:String,
     username: String,
     email: String,
     password: String,
@@ -9,6 +10,12 @@ const User = mongoose.model(
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Role"
+      }
+    ],
+    saved: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Event"
       }
     ]
   })

@@ -7,7 +7,7 @@ const Role = db.role;
 
 const app = express();
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "http://localhost:3000"
 };
 
 
@@ -18,6 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 
 require("./app/routes/auth.routes")(app);
 require("./app/routes/user.routes")(app);
+require("./app/routes/event.routes")(app);
 
 // simple route
 app.get("/", (req, res) => {
