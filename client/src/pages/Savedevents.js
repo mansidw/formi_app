@@ -72,13 +72,13 @@ export default function Savedevents() {
               A list of all your saved events.
             </Typography>
 
-            <SearchBar
-              value={keyword}
-              placeholder="Search Events by Name"
-              onChange={(newValue) => handleChangekeyword(newValue)}
-              onRequestSearch={() => handleChangekeyword(keyword)}
-              style={{width:'560px',fontFamily:'Quicksand'}}
-            />
+//             <SearchBar
+//               value={keyword}
+//               placeholder="Search Events by Name"
+//               onChange={(newValue) => handleChangekeyword(newValue)}
+//               onRequestSearch={() => handleChangekeyword(keyword)}
+//               style={{width:'560px',fontFamily:'Quicksand'}}
+//             />
             
             
 
